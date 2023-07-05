@@ -1,0 +1,242 @@
+
+:root {
+    --main-bg-color: #EDAE49;
+    --heading-text-color: #0B2404;
+    --subheading-text-color: #393A40;
+  }
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body * {
+    font-family: 'Open Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #0B0C0D;
+    display: flex;
+    flex-direction: column;
+}
+
+body{
+    min-height: 100vh;    
+    background-color: #5d737e;
+}
+
+h2 {
+    font-size: 64px;
+    color: var(--heading-text-color);
+}
+
+
+a {
+    text-decoration: none;
+    display: inline;
+}
+
+li {
+    display: inline;
+}
+
+
+section, address {
+    align-self: center;
+    width: clamp(900px, 65vw, 70vw);
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 130px;
+}
+
+h3 {
+    font-size: 1.5em;   
+    font-weight: 550;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+    font-size: 1.3em;
+    letter-spacing: -0.02em;
+    color: #0B2404;
+}
+
+p {
+    padding-top: 20px;
+    font-size: larger;
+}
+
+img {
+    width: 400px;
+    height: 400px;
+}
+
+
+header {
+    height: 80px;
+    background-color: var(--main-bg-color);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+
+button {
+    width: 213px;
+    height: 39px;
+    justify-self: flex-start;
+    border: none;
+    border-radius: 0px;
+    box-shadow: none;
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+    border-radius: 1px;
+    color: #393A40;
+    background-color: var(--main-bg-color);
+    cursor: pointer;
+    align-items: center;
+}
+
+.flexrow {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.headerSection {
+    justify-content: space-between;
+    align-items: center;
+    width: clamp(900px, 65vw, 70vw);
+    height: auto;
+}
+
+.smallCard {
+    justify-content: flex-start;
+    width: 30%;
+    max-width: 250px;
+}
+
+
+.smallCard > img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10%;
+}
+
+.heroText > h1 {
+    position: absolute;
+    color: var(--heading-text-color);
+    width: 661px;
+    font-size:  80px;
+    bottom: 0px;
+    left: calc(17.5vw + 472px);
+}
+
+nav {
+    width: fit-content;
+    align-items: space-between;
+}
+
+nav > a {
+    text-transform: uppercase;
+    width: 150px;
+    color: var(--subheading-text-color);
+    letter-spacing: 0.08em;
+    font-weight: 300;
+    text-align: center;
+    align-items: center;
+}
+
+
+.main-article {
+    background-color: #f1e3f3;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px 34px 50px;
+    border: 1px solid #C1C1C7;
+}
+
+.left-align {
+    flex-direction: row;
+}
+
+.right-align {
+    flex-direction: row-reverse;
+}
+
+.main-article img {
+    height: 314px;
+    width: 314px;
+}
+
+.main-article-container {
+    height: clamp(300px, fit-content, fit-content);
+    width: clamp(476px, 723px, 723px);
+    justify-content: flex-start;
+}
+
+.project-container > * {
+    margin-bottom: 5%;
+}
+
+
+.buttons-container {
+    max-width: 476px;
+    justify-content: space-between;
+}
+
+.buttonAlt {
+    border: solid 1px #C1C1C7;
+    background-color: #FFFFFF;
+}
+
+.projectTools {
+    margin-bottom: 0px;
+    justify-content: flex-start;
+}
+
+.projectTool {
+    height: 36px;
+    background-color: var(--main-bg-color);
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 1%;
+}
+
+form {
+    height: clamp(300px, fit-content, fit-content);
+    width: clamp(476px, 723px, 723px);
+    justify-content: flex-start;
+}
+
+form label {
+    text-transform: uppercase;
+    color: #393A40;
+    padding-top: 20px;
+}
+
+input, textarea {
+    height: 39px, fit-content;
+    border-radius: 1px;
+    color: #393A40;
+    box-shadow: none;
+    border: solid 1px #C1C1C7;
+    background-color: #FFFFFF;
+    padding: 5px;
+}
+
+.submit {
+    margin-top: 20px;
+}
+
+.form-container{
+    transform: translateY(-60px);
+}
+
+
+script {
+    display: none;
+}
