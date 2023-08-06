@@ -2,57 +2,87 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Locus memory</title>
-    <script src="https://kit.fontawesome.com/0d0ea05097.js" crossorigin="anonymous"></script>
+    <title>Locus</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/0d0ea05097.js" crossorigin="anonymous"></script>
+    <script src="./script.js" defer></script>
 </head>
 <body>
-    <header class="flexrow">
-        <div class="headerSection flexrow">
-            <div class="smallCard flexrow">
-                <img src="./images/Method Draw Image.png">
-                <h3>Locus</h3>
-            </div>
-            <nav id="navigation" class="flexrow">
-                <a href="#">Sign-up</a>
-                <a href="#">Play</a>
-            </nav>
+    <menu class="sidebar">
+        <div class="logo-container">
+            <img src="./images/brain-solid.svg" alt="brain logo" class="logo-image">
+            <h1 class="logo-text">Locus</h1>
         </div>
-    </header>
-    <main>        
-        <section id="about">
-            <h2>About</h2>
-            <article class="main-article left-align"><div class="main-article-container">
-                    <h3>What is a memory palace</h3>
-                    <p>A calculator web app built using HTML, CSS, and JavaScript allows users to perform basic mathematical operations such as addition, subtraction, multiplication, and division in real-time. It features a sleek, user-friendly design and responsive layout, making it accessible across a variety of devices.</p>
-                    <div class="buttons-container flexrow">
-                        <a href="#"><button>See Code</button></a>
-                        <a href="#"><button class="buttonAlt">View project</a></button>
+        <nav class="menu-options">
+            <a href="./index.html" class="option-container">
+                <i class="fa-solid fa-house"></i>
+                <span class="option-text">Home</span>
+            </a>
+            <a href="./pages/about.html" class="option-container">
+                <i class="fa-solid fa-book"></i>
+                <span class="option-text">About</span>
+            </a>
+            <a href="./pages/settings.html" class="option-container">
+                <i class="fa-solid fa-sliders"></i>
+                <span class="option-text">Settings</span>
+            </a>
+            <a href="./pages/faqs.html" class="option-container">
+                <i class="fa-solid fa-circle-question"></i>
+                <span class="option-text">FAQs</span>
+            </a>
+        </nav>
+    </menu>
+    <nav class="navbar">
+        <div class="play-bar">
+            <form action="#search">
+                <input class="searchbar" type="text" placeholder = "Search lists">
+            </form>
+            <button class="play-button" id="play-random-list">Play Random List</button>
+            <button class="play-button" id="new-list">New List</button>
+        </div>
+        <div class="profile-bar">
+            <span class="profile-name">Morgan Okaley</span>
+            <img src="./images/ben-iwara-ZuuS3qttlwE-unsplash.jpg" alt="profile picture" class="profile-picture">
+        </div>
+    </nav>
+    <main class="main-area">
+        <section class="lists">
+            <h2>Lists</h2>
+            <div class="list-container">
+                <ul class="item-container">
+                    <div class="list-header">
+                        <h3>List name</h3>
+                        <button class="play-button" id="play-list">Play</button>
                     </div>
-                </div>
-            </article>
-            <article class="main-article right-align">
-                <a href="https://v1zroy.github.io/Etch-a-sketch/" target="_blank"><img src="./images/etchScreenshot.png"></a>
-                <div class="main-article-container">
-                    <h3>Etch-a-sketch app</h3>
-                    <ul class="flexrow projectTools">
-                        <li class="projectTool"><i class="fa-brands fa-html5"></i>&nbsp;HTML</li>
-                        <li class="projectTool"><i class="fa-brands fa-css3-alt"></i>&nbsp;CSS</li>
-                        <li class="projectTool"><i class="fa-brands fa-square-js"></i>&nbsp;Javascript</li>
-                    </ul>
-                    <p>A functional sketchpad built using HTML, CSS, and JavaScript allows users to draw, paint and create their artwork. The app features adjustable settings such as canvas size and color, offering users control and customization over their artwork.</p>
-                    <div class="buttons-container flexrow">
-                        <a href="#"><button>See Code</button></a>
-                        <a href="#"><button class="buttonAlt">View project</button></a>
-                    </div>
-                </div>
-            </article>
+                    <li>Car</li>
+                    <li>Dog</li>
+                    <li>Sheep</li>
+                    <li>Motor-cycle</li>
+                    <li>Dog</li>
+                    <li>Sheep</li>
+                    <li>Motor-cycle</li>
+                </ul>
+                <ul class="item-container">
+                    <li>Car</li>
+                    <li>Dog</li>
+                    <li>Sheep</li>
+                    <li>Motor-cycle</li>
+                </ul>
+                <ul class="item-container">
+                    <li>Car</li>
+                    <li>Dog</li>
+                    <li>Sheep</li>
+                    <li>Motor-cycle</li>
+                </ul>
+            </div>
         </section>
-        
+        <section class="stats">
+            <h2>Stats</h2>
+            <div class="stat-container">
+
+            </div>
+        </section>
     </main>
-    
-    
 </body>
 </html>
