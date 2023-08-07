@@ -49,32 +49,22 @@
     <main class="main-area">
         <section class="lists">
             <h2>Lists</h2>
-            <div class="list-container">
-                <ul class="item-container">
+            <div class="lists-container" id="lists-container">
+                <div class="item-container">
                     <div class="list-header">
                         <h3>List name</h3>
                         <button class="play-button" id="play-list">Play</button>
                     </div>
-                    <li>Car</li>
-                    <li>Dog</li>
-                    <li>Sheep</li>
-                    <li>Motor-cycle</li>
-                    <li>Dog</li>
-                    <li>Sheep</li>
-                    <li>Motor-cycle</li>
-                </ul>
-                <ul class="item-container">
-                    <li>Car</li>
-                    <li>Dog</li>
-                    <li>Sheep</li>
-                    <li>Motor-cycle</li>
-                </ul>
-                <ul class="item-container">
-                    <li>Car</li>
-                    <li>Dog</li>
-                    <li>Sheep</li>
-                    <li>Motor-cycle</li>
-                </ul>
+                    <ul class="list-contents">
+                        <li>Car</li>
+                        <li>Dog</li>
+                        <li>Sheep</li>
+                        <li>Motor-cycle</li>
+                        <li>Dog</li>
+                        <li>Sheep</li>
+                        <li>Motor-cycle</li>
+                    </ul>
+                </div>
             </div>
         </section>
         <section class="stats">
@@ -84,5 +74,26 @@
             </div>
         </section>
     </main>
+
+    <div class="new-list-modal modal-closed" id="new-list-modal">
+        <button class="close-button" id="new-list-close-button" aria-label="Close" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <form class="new-list-form" id="new-list-form" onsubmit="saveNewList">
+            <div class="form-input">
+                <label for="new-list-name">Name your new list:</label>
+                <input type="text" name="new-list-name">
+            </div>
+
+            <div class="form-input">
+                <label for="new-list-length">How many items do you want in your new list?:</label>
+                <input type="number" name="new-list-length">
+            </div>
+            <button type="submit" class="   " value="Submit">Create new list</button>
+        </form>
+    </div>
+    <div class="modal-overlay modal-closed" id="modal-overlay">
+
+    </div>
 </body>
 </html>
