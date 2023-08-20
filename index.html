@@ -39,7 +39,7 @@
                 <input class="searchbar" type="text" placeholder = "Search lists">
             </form>
             <button class="play-button" id="play-random-list">Play Random List</button>
-            <button class="play-button" id="new-list">New List</button>
+            <button class="play-button" id="new-list">New Random List</button>
         </div>
         <div class="profile-bar">
             <span class="profile-name">Morgan Okaley</span>
@@ -53,7 +53,7 @@
                 <div class="item-container">
                     <div class="list-header">
                         <h3>List name</h3>
-                        <button class="play-button" id="play-list">Play</button>
+                        <button class="play-list-button">Play</button>
                     </div>
                     <ul class="list-contents">
                         <li>Car</li>
@@ -79,7 +79,7 @@
         <button class="close-button" id="new-list-close-button" aria-label="Close" type="button">
             <span aria-hidden="true">&times;</span>
         </button>
-        <form class="new-list-form" id="new-list-form" onsubmit="saveNewList">
+        <form action ="#" class="new-list-form" id="new-list-form" onsubmit="saveNewList()" return false>
             <div class="form-input">
                 <label for="new-list-name">Name your new list:</label>
                 <input type="text" name="new-list-name">
@@ -87,9 +87,9 @@
 
             <div class="form-input">
                 <label for="new-list-length">How many items do you want in your new list?:</label>
-                <input type="number" name="new-list-length">
+                <input type="number" name="new-list-length" required>
             </div>
-            <button type="submit" class="   " value="Submit">Create new list</button>
+            <button type="submit" class="submit-button" value="Submit" onsubmit="saveNewList()">Create new list</button>
         </form>
     </div>
     <div class="modal-overlay modal-closed" id="modal-overlay">

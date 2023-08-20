@@ -209,7 +209,7 @@ main {
     font-size: large;
 }
 
-.play-button {
+.play-button, .play-list-button {
     border-style:none;
     border-radius:25px;
     height:50px;
@@ -282,6 +282,11 @@ h2 {
     padding-bottom: 5px;
     border-bottom: solid 2px var(--platinum);
     height: 20%;
+}
+
+.list-header > h3 {
+    text-transform: capitalize;
+    font-weight: bold;
 }
 
 .item-container {
